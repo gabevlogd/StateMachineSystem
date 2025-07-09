@@ -53,45 +53,45 @@ public:
 	
 	UStateMachineComponent();
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "State Machine")
 	FGameplayTag GetStateMachineTag() const { return StateMachineTag; }
 	
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "State Machine")
 	UStateBase* ChangeState(const FGameplayTag NextState);
 	
-	UFUNCTION(BlueprintCallable, BlueprintPure)
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "State Machine")
 	bool TryGetState(const FGameplayTag StateTag, UStateBase*& OutState) const;
 
-	UFUNCTION(BlueprintCallable, BlueprintPure)
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "State Machine")
 	UStateBase* GetState(const FGameplayTag StateTag) const;
 	
-	UFUNCTION(Blueprintable, BlueprintPure)
+	UFUNCTION(Blueprintable, BlueprintPure, Category = "State Machine")
 	UStateBase* GetCurrentState() const { return CurrentState; }
 	
-	UFUNCTION(Blueprintable, BlueprintPure)
+	UFUNCTION(Blueprintable, BlueprintPure, Category = "State Machine")
 	UStateBase* GetPreviousState() const { return PreviousState; }
 	
-	UFUNCTION(BlueprintCallable, BlueprintPure)
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "State Machine")
 	FGameplayTag GetCurrentStateTag() const { return CurrentState->StateTag; }
 
-	UFUNCTION(BlueprintCallable, BlueprintPure)
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "State Machine")
 	FGameplayTag GetPreviousStateTag() const { return PreviousState->StateTag; }
 
-	UFUNCTION(BlueprintCallable, BlueprintPure)
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "State Machine")
 	bool GetIsRunning() const { return bIsRunning; }
 
 	/**
      *  Returns the new state entered by this state machine after handling the input if any, otherwise returns nullptr
      */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "State Machine")
 	UStateBase* HandleInput(const FGameplayTag InputActionTag, const FInputActionValue& Value);
 	
 	UStateBase* InterruptCurrentState(const FGameplayTag Interrupter, const bool bForceEntryState = false);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "State Machine")
 	void Pause(const bool bResetToEntryState = false);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "State Machine")
 	void UnPause() { bPaused = false; }
 	
 	virtual void BeginPlay() override;

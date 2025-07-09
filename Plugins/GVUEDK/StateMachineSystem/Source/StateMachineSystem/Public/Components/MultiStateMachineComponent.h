@@ -44,7 +44,7 @@ public:
 	/**
      *  Change the state of the state machine with the given tag
      */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Multi-State Machine")
 	void ChangeState(const FGameplayTag NextState, const FGameplayTag RelativeStateMachine);
 
 	/**
@@ -53,19 +53,19 @@ public:
 	 *  @param Value - The value of the input action
 	 *  @param RelativeStateMachine - The tag of the state machine which has to handle the input
 	 */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Multi-State Machine")
 	void HandleInput(const FGameplayTag InputActionTag, const FInputActionValue& Value, const FGameplayTag RelativeStateMachine);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Multi-State Machine")
 	void PauseAll(const bool bResetToEntryState = false);
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Multi-State Machine")
 	void Pause(FGameplayTag StateMachineTag, const bool bResetToEntryState = false);
 	
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Multi-State Machine")
 	void UnPauseAll();
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Multi-State Machine")
 	void UnPause(FGameplayTag StateMachineTag);
 
 private:
