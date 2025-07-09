@@ -71,5 +71,9 @@ Saved/*
 Intermediate/*
 Plugins/**/Intermediate/*
 
+Plugins/GVUEDK/*/Binaries/*
+Plugins/GVUEDK/*/Intermediate/*
+Plugins/GVUEDK/*/Saved/*
+
 # Cache files for the editor to use
 DerivedDataCache/*
