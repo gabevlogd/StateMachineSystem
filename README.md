@@ -1,7 +1,7 @@
 # StateMachineSystem
 A flexible and extensible State Machine system built for Unreal Engine, designed to support multiple concurrent state machines, custom transitions, input-driven logic, and Blueprint/C++ integration. Includes a sample project with a playable character demonstrating movement, jumping, shooting, and state communication.
 
-**Plugin full documentation:** [link]
+**Plugin full documentation:** [Docs](https://brass-keyboard-cc2.notion.site/State-Machine-System-1f1c9702a85d8084aef8c3028f882a6e)
 
 
 
@@ -32,13 +32,13 @@ To integrate the **State Machine System Plugin** into your Unreal Engine project
     - Right-click on your `.uproject` file and select **Generate Visual Studio project files**.
 4. **Enable the Plugin**
     - Open your project in Unreal Engine.
-    - Go to **Edit → Plugins**, search for `"Modular State Machine"` and ensure it is **enabled**.
+    - Go to **Edit → Plugins**, search for `"StateMachineSystem"` and ensure it is **enabled**.
     - Restart the editor if prompted.
 5. **(Optional) Example Map**
-    - The plugin includes a fully functional example map (`StateMachine_Example`) showing a character with movement, jump, and shooting states.
-    - You can find it in the `Content/ModularStateMachine/Example/` folder.
+    - The plugin includes a fully functional example map (`LV_ExampleTemplate`) showing a character with movement, jump, and shooting states.
+    - You can find it in the `StateMachineSystem\Content\ExampleTemplate` folder.
 
-> 💡 Note: The example scene also uses an optional camera plugin. It is not required for the plugin to work and can be safely disabled, but the example scene will no longer function correctly without it.
+> 💡 Note: The example scene also uses an optional camera plugin. It is not required for the plugin to work and can be safely disabled, but the example scene will no longer function correctly without it. If you want to use the Example Template do the same process for the "DynamicCameraSystem", included in the .zip file
 >
 
 
