@@ -20,7 +20,6 @@ To integrate the **State Machine System Plugin** into your Unreal Engine project
     
     ```
     css
-    CopiaModifica
     YourProject/
     └── Plugins/
         └── StateMachineSystem/
