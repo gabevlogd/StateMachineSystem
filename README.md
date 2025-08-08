@@ -37,7 +37,6 @@ To integrate the **State Machine System Plugin** into your Unreal Engine project
     - The plugin includes a fully functional example map (`LV_ExampleTemplate`) showing a character with movement, jump, and shooting states.
     - You can find it in the `StateMachineSystem\Content\ExampleTemplate` folder.
 
-> 💡 Note: The example scene also uses an optional camera plugin. It is not required for the plugin to work and can be safely disabled, but the example scene will no longer function correctly without it. If you want to use the Example Template do the same process for the "DynamicCameraSystem", included in the .zip file
 >
 
 
